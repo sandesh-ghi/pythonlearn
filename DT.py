@@ -15,7 +15,9 @@
 #   %S  :   second                              20
 import datetime
 x = datetime.datetime.now()
+n = x.strftime("%Y-%m-%d")
 m = x.strftime("%H:%M:%S:%p")
+print(n)
 print(m)
 print(x)
 
