@@ -94,13 +94,45 @@ demoobject.sumvalue();
 # obj.displayinfo()
 # obj.displayinfo(' BCA')
 
-class ktm:
-    def displayinfo(self):
-        print("Welcome to ktm")
-class RR(ktm):
-    def displayinfo(self):
-        super().displayinfo()   #
-        print("Welcome to RR")
-obj=RR()
-obj.displayinfo()
+# class ktm:
+#     def displayinfo(self):
+#         print("Welcome to ktm")
+# class RR(ktm):
+#     def displayinfo(self):
+#         super().displayinfo()   #
+#         print("Welcome to RR")
+# obj=RR()
+# obj.displayinfo()
+
+
+
+#   Method Overloading
+# class Area:
+#     def find_area (self,x=None,y=None):
+#
+#         if x!= None and y!= None:
+#             print(x*y)
+#         elif x!= None:
+#             print(x*x)
+#         else:
+#             print("Nothing")
+#
+#
+# obj1=Area()
+# obj1.find_area()
+# obj1.find_area(10)
+# obj1.find_area(10,20)
+
+
+#    Method Overriding
+class A:
+    def showData(self):
+        print("I am in A class")
+class B(A):
+    def showData(self):
+        print("I am in B class")
+
+
+obj=B()
+obj.showData()
 
